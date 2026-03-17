@@ -1,0 +1,224 @@
+.about {
+    background: var(--bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-decorations {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.section-decoration-icon {
+    position: absolute;
+    opacity: 0;
+    filter: drop-shadow(0 0 8px rgba(201, 169, 98, 0.2));
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201, 169, 98, 0.2), transparent);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.about-text {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.about-intro {
+    font-size: 1.25rem;
+    color: #f4f4f5;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.about-body {
+    margin-bottom: 1.5rem;
+}
+
+.about-body p {
+    color: #a1a1aa;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-focus {
+    color: #c9a962;
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 1rem;
+    background: rgba(201, 169, 98, 0.05);
+    border-left: 3px solid #c9a962;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Timeline */
+.about-timeline {
+    padding-left: 2rem;
+}
+
+.timeline-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #f4f4f5;
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #c9a962 0%, rgba(201, 169, 98, 0.2) 100%);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background: #c9a962;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(201, 169, 98, 0.5);
+}
+
+.timeline-content {
+    padding: 1.25rem;
+    background: var(--bg-secondary);
+    border: 1px solid rgba(201, 169, 98, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    border-color: rgba(201, 169, 98, 0.3);
+    transform: translateX(5px);
+}
+
+.timeline-year {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #c9a962;
+    background: rgba(201, 169, 98, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-title-item {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.125rem;
+    color: #f4f4f5;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-description {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #a1a1aa;
+    line-height: 1.6;
+}
+
+/* Quote */
+.about-quote {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.5) 0%, rgba(37, 37, 66, 0.5) 100%);
+    border: 1px solid rgba(201, 169, 98, 0.1);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-quote::before {
+    content: '"';
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    color: rgba(201, 169, 98, 0.1);
+    line-height: 1;
+}
+
+.about-quote blockquote {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    color: #d4d4d8;
+    line-height: 1.8;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-timeline {
+        padding-left: 0;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-item {
+        padding-left: 0;
+    }
+
+    .timeline-dot {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-quote {
+        padding: 2rem 1.5rem;
+    }
+
+    .about-quote::before {
+        font-size: 4rem;
+        left: 1rem;
+    }
+
+    .about-quote blockquote {
+        font-size: 1rem;
+    }
+}

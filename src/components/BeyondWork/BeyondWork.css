@@ -1,0 +1,195 @@
+.beyond-work {
+    background: var(--bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-decorations {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.section-decoration-icon {
+    position: absolute;
+    opacity: 0;
+    filter: drop-shadow(0 0 8px rgba(201, 169, 98, 0.2));
+}
+
+.beyond-work::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201, 169, 98, 0.2), transparent);
+}
+
+/* Activities Grid */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.activity-card {
+    padding: 2rem;
+    background: var(--bg-secondary);
+    border: 1px solid rgba(201, 169, 98, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.activity-card:hover {
+    border-color: rgba(201, 169, 98, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.activity-icon {
+    display: inline-block;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.activity-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: #f4f4f5;
+    margin-bottom: 0.75rem;
+}
+
+.activity-description {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    color: #a1a1aa;
+    line-height: 1.6;
+}
+
+/* Beyond Reflection */
+.beyond-reflection {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.0625rem;
+    color: #c9a962;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(201, 169, 98, 0.05);
+    border: 1px solid rgba(201, 169, 98, 0.1);
+    border-radius: 12px;
+    margin-bottom: 4rem;
+    line-height: 1.8;
+}
+
+/* Education Section */
+.education-section {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(201, 169, 98, 0.1);
+}
+
+.education-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    color: #f4f4f5;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.education-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid rgba(201, 169, 98, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    border-color: rgba(201, 169, 98, 0.25);
+    transform: translateX(10px);
+}
+
+.education-degree {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #c9a962;
+    min-width: 80px;
+}
+
+.education-details {
+    flex: 1;
+}
+
+.education-institution {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f4f4f5;
+    margin-bottom: 0.5rem;
+}
+
+.education-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-meta span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8125rem;
+    color: #71717a;
+}
+
+.education-grade {
+    color: #c9a962 !important;
+    font-weight: 600;
+}
+
+.education-focus {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #a1a1aa;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .activity-card {
+        padding: 1.5rem;
+    }
+
+    .beyond-reflection {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .education-item {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .education-degree {
+        font-size: 1.125rem;
+    }
+}

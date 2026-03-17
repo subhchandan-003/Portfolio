@@ -1,0 +1,186 @@
+.achievements {
+    background: var(--bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-decorations {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.section-decoration-icon {
+    position: absolute;
+    opacity: 0;
+    filter: drop-shadow(0 0 8px rgba(201, 169, 98, 0.2));
+}
+
+.achievements::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201, 169, 98, 0.2), transparent);
+}
+
+/* Achievements Grid */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.achievement-category {
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid rgba(201, 169, 98, 0.1);
+    border-radius: 12px;
+}
+
+.category-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: #c9a962;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(201, 169, 98, 0.1);
+}
+
+.category-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(201, 169, 98, 0.02);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+    background: rgba(201, 169, 98, 0.05);
+}
+
+.achievement-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.achievement-content h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #f4f4f5;
+    margin-bottom: 0.25rem;
+}
+
+.achievement-content p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8125rem;
+    color: #71717a;
+}
+
+/* Certifications */
+.certifications-section {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(201, 169, 98, 0.1);
+}
+
+.certifications-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    color: #f4f4f5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.certifications-intro {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: #a1a1aa;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.certification-card {
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid rgba(201, 169, 98, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.certification-card:hover {
+    border-color: rgba(201, 169, 98, 0.4);
+    transform: translateY(-3px);
+}
+
+.cert-year {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: #c9a962;
+    background: rgba(201, 169, 98, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    margin-bottom: 0.75rem;
+}
+
+.cert-name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f4f4f5;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.cert-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8125rem;
+    color: #71717a;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievement-category {
+        padding: 1.25rem;
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certification-card {
+        padding: 1.25rem;
+    }
+}
