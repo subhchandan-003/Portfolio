@@ -284,7 +284,6 @@ const Hero = () => {
                         <div className="card-inner">
                             <div className="card-content">
                                 <div className="profile-badge">
-                                    <span className="badge-icon">🎯</span>
                                     <span>Product & Analytics</span>
                                 </div>
                                 <div className="profile-main">
