@@ -412,18 +412,16 @@
 
 .visual-card {
     width: 320px;
-    height: 460px;
     perspective: 1000px;
 }
 
 .card-inner {
     position: relative;
     width: 100%;
-    height: 100%;
     background: linear-gradient(145deg, #1a1a2e 0%, #252542 100%);
     border: 1px solid rgba(201, 169, 98, 0.2);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 2rem 2rem 2.5rem;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -438,7 +436,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
 }
 
 .profile-badge {
@@ -497,7 +494,7 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: center;
-    margin-top: auto;
+    margin-top: 1.25rem;
 }
 
 .skill-tag {
@@ -586,7 +583,6 @@
 
     .visual-card {
         width: 280px;
-        height: 420px;
     }
 }
 
@@ -618,6 +614,5 @@
 
     .visual-card {
         width: 240px;
-        height: 380px;
     }
 }
