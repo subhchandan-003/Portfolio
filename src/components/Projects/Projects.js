@@ -34,6 +34,21 @@ const projectsDecorations = [
 const Projects = () => {
     const projects = [
         {
+            id: 0,
+            title: "BidBuddy",
+            subtitle: "Elective Finder — IIM Sambalpur",
+            year: "2026",
+            description: "A full-stack elective-explorer platform built end-to-end by a 5-member team to replace the manual, confusing elective selection process across IIM Sambalpur's entire cohort.",
+            features: [
+                "Adopted by 300+ batchmates for simplified course selection across the cohort",
+                "Drove 200+ active users through faster elective discovery and filtering at IIM",
+                "Led 5-member team end-to-end, replacing manual elective search for the entire batch"
+            ],
+            tech: ["React", "MERN Stack", "Product Design", "Full-Stack"],
+            icon: "🎓",
+            accent: "#f59e0b"
+        },
+        {
             id: 1,
             title: "Froggy",
             subtitle: "Agentic Product Copilot",
