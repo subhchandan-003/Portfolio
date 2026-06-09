@@ -268,8 +268,8 @@ const Hero = () => {
                         </div>
                         <div className="stat-divider"></div>
                         <div className="stat-item">
-                            <span className="stat-number">9</span>
-                            <span className="stat-label">National Wins</span>
+                            <span className="stat-number">22</span>
+                            <span className="stat-label">Podium Finishes</span>
                         </div>
                     </motion.div>
                 </div>

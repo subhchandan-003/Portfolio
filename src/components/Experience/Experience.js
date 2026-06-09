@@ -43,6 +43,21 @@ const Experience = () => {
     const experiences = [
         {
             id: 1,
+            role: "Business Analytics Intern",
+            company: "Parry Enterprises India Ltd. (Murugappa Group)",
+            period: "Apr 2026 – May 2026",
+            description: "Designed and shipped AI-powered analytics products during a 2-month internship with one of India's leading conglomerates, working across product strategy, BI, and GTM.",
+            highlights: [
+                "Designed AI-powered sales intelligence product via Claude API; shipped live tool beyond original project scope",
+                "Built & deployed a 6-screen BI dashboard enabling self-serve sales analytics across 5 years of transactional data",
+                "Designed GTM strategy for 3 product categories covering pricing models, phased roadmap & KPIs",
+                "Authored 7,200-word product spec with 25+ design tokens & 6-screen interaction states adopted by design team"
+            ],
+            lesson: "This internship showed me that a clear product spec and a well-structured BI layer can transform how sales teams access and act on data — the best tools are the ones people actually use.",
+            icon: "🏢"
+        },
+        {
+            id: 2,
             role: "Teaching Assistant",
             company: "Interface Software",
             period: "Jul 2023 - May 2025",
@@ -59,7 +74,7 @@ const Experience = () => {
             icon: "🎓"
         },
         {
-            id: 2,
+            id: 3,
             role: "Data Science Intern",
             company: "RINEX",
             period: "Nov 2021 - Dec 2021",

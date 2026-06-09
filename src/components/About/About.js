@@ -37,15 +37,20 @@ const About = () => {
         intro: "I am Subhchandan Das, an MBA candidate at IIM Sambalpur with a background in Computer Science and a growing professional focus on product management, analytics, and AI-enabled innovation.",
         body: `My journey began on the technical side, where I learned to build, debug, analyze, and solve problems through code. Over time, however, I became more interested in a larger question: how can technology be used not just to build systems, but to create better business outcomes, improve customer experience, and make products more relevant over time?
 
-Before joining my MBA, I spent 23 months at Interface Software, where I mentored more than 250 learners in full-stack concepts and contributed to a 10 percent improvement in pass rates. I also worked as a Data Science Intern at RINEX, where I built EDA reports and dashboards on 50 plus datasets to support product and business decision making.`,
-        focus: "I am especially interested in how AI can be integrated across the product lifecycle, from discovery and user research to prioritization, workflow automation, and continuous product improvement."
+Before joining my MBA, I spent 23 months at Interface Software, where I mentored more than 250 learners in full-stack concepts and contributed to a 10 percent improvement in pass rates. I also worked as a Data Science Intern at RINEX, building EDA reports and dashboards on 50 plus datasets to support product and business decision making. Most recently, as a Business Analytics Intern at Parry Enterprises India Ltd. (Murugappa Group), I designed an AI-powered sales intelligence product via the Claude API, built a 6-screen BI dashboard, and authored a 7,200-word product spec adopted by the design team.`,
+        focus: "I am especially interested in how AI can be integrated across the product lifecycle, from discovery and user research to prioritization, workflow automation, and continuous product improvement. Across 36 national B-school events with 22 podium finishes, I have tested this thinking in real competitive settings."
     };
 
     const timeline = [
         {
-            year: "2023 - Present",
+            year: "Apr - May 2026",
+            title: "Parry Enterprises India Ltd.",
+            description: "Business Analytics Intern (Murugappa Group) - Designed AI-powered sales intelligence product, built 6-screen BI dashboard, and authored 7,200-word product spec adopted by the design team."
+        },
+        {
+            year: "2025 - Present",
             title: "MBA Journey",
-            description: "IIIM Sambalpur - Building capabilities in product thinking, business problem solving, analytics, and AI-enabled innovation."
+            description: "IIM Sambalpur - Building capabilities in product thinking, business problem solving, analytics, and AI-enabled innovation."
         },
         {
             year: "2023 - 2025",
