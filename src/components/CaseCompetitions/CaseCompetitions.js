@@ -41,6 +41,7 @@ const hallOfFameData = [
         category: "win",
         label: "Winner",
         competitions: [
+            { name: "APEX 2026", domain: "Management Consulting", host: "GradNext | MBB Judges (McKinsey, BCG, Bain)", registrations: "4,261" },
             { name: "PROD-IGY", domain: "Product Management", host: "SCMHRD × Skilled Sapiens", registrations: "356" },
             { name: "Founder's Edge Challenge", domain: "Product Management", host: "IIM Raipur × Lyntell (Tigrid Technologies)", registrations: "315" },
             { name: "Ops'escape Room", domain: "Operations", host: "IIM Sambalpur", registrations: "149" },
@@ -86,8 +87,8 @@ const hallOfFameData = [
 ];
 
 const hofStats = [
-    { number: "28", label: "Competitions" },
-    { number: "5", label: "1st Place Wins" },
+    { number: "29", label: "Competitions" },
+    { number: "6", label: "1st Place Wins" },
     { number: "11", label: "Podium Finishes" },
     { number: "9", label: "Finalist Runs" },
     { number: "3", label: "National Semi-Finals" },
